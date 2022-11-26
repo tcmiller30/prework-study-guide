@@ -11,6 +11,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
  <!-----------------------------------------------------------------------------------HTML-------------------------------------------------------------------------------------------------->
@@ -30,7 +31,7 @@
                   <li>Meta: defines metadata (character set, description, keywords, author, and viewport)</li>
                   <li>Script: embeds client-side scripts in HTML document</li>
                 </ul>
-              </ul>
+              </ul> <!--Head Element Sublist-->
       <br>
             <li> The body element represents the visible content shown to the user</li>
               <ul>
@@ -51,7 +52,7 @@
                 
                   <li> The footer element displays information at the bottom of a webpage ("I can code!)</li>
                    </li>
-                 </ul> 
+                 </ul> <!--Body Element Sublist-->
               </ul>
             
             
@@ -101,21 +102,49 @@
           <li> git add -A: Commits all files in the working branch (saves changes to working branch)</li>
           <li> git commit -m: Commits staged changes from working branch to repository</li>
           <ul><li>"-m" flag associates a message with our commit that should be a short descriptive message of the changes implemented</li></ul>
-          <li> </li>
+          
+          <li><b>Add vs Commit</b></li><ul>
+            <li>git add: takes a modified file in your working directory and places the modified version in a staging area</li>
+            <li>git commit: takes everything from the staging area and makes a permanent snapshot of the current state of your repository that is associated with a unique identifier (-m)</li><ul>
+              <li>This makes changes to the local repository, not the repo on GitHub</li>
+              <li>The Commit Message(-m) should describe the snapshot/changes made in the commit in a way that makes it easy for you or collaborators to understand what was changed and why
+                    and allows you to find/undo previous changes made if necessary</li>
+              </ul><!--Git Commit sublist-->
+          </ul><!--Add/Commit Sublist-->
 
+          <li><b>Push/Pull/Pull Request(PR)</b></li><ul>
+            <li>Push:</li>
+            <li>Pull:</li>
+            <li>Pull Request (PR):</li>
+          </ul><!--Push/Pull/PR sublist-->
+          <li>git pull origin main: Pulls remote "main" branch into the local "main" branch, syncing both online and local repositories</li>
         </ul>
       </section>
+      
  <!--------------------------------------------------------------------------------JavaScript----------------------------------------------------------------------------------------------->
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript Notes here</li>
+          <li>JavaScript os a high-level dynamic programming language that allows users to interact with websites</li>
+          <li>As in CSS, /* defines a comment</li>
+          <li>A <b>Variable</b> is -------- and can be defined as "const", "let", or more commonly "var"</li>
+          <li>An <b>Array</b> is a single variable that is used to hold a group of data where the values are contained by [brackets] and separated by commas</li><ul>
+            <li>In order to access an individual value in an array, you must reference its <b>Array Index</b>
+               represented by sequenced numbers starting with "0" that indicates each items place in the order of the array [0,1,2,3,4...]</li>
+            <li></li>
+          </ul><!--Array Sublist-->
+
         </ul>
       </section>
     </main>
 
+
+
+    <!-------------------------------------------------------------------------------Footer------------------------------------------------------------------------------------------------->
     <footer>
       <p>I can code!</p>
     </footer>
+
+    <script src="./assets/script.js"></script>
   </body>
 </html>
