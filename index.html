@@ -133,13 +133,31 @@
             <li><b>Boolean:</b> A true/false value, needs no quotes (x = true)</li>
             <li><b>Array:</b> A structure that allows you to store multple values in a single reference, contained by brackets and separated by commas (x = [red, green, blue])</li><ul>
               <li>Refer to each member of an array by calling their <b>Array Index</b> represented by sequenced numbers starting with "0" that indicates each items place in the order of the array [0,1,2,3...]</li>
+                <uL><li>In the above example, the color green would be represented by x[1] because it is the second value in the array</li></uL>
+              <li>Arrays can hold values of different data types. For example, a students name, age, and enrollement status are contained in one Array, represented as (var studentInfo = ['John', 24, true])</li>
             </ul><!--Array Sublist--></li>
             <li><b>Object:</b> "This can be anything. Everything in JavaScript is an object and can be stored in a variable. Keep this in mind as you learn." (x = document.querySelector('h1'))</li>
           </ul><!--Data Types Sublist-->
-          <li><b>Operators</b> are mathematical symbols that produce a result based on two values</li>
+          <li><b>Operators</b> are mathematical symbols that produce a result based on two values</li><ul>
+            <li><b>Addition (+): Adds 2 Numbers or Strings Together (1 + 2; 'Hello' + 'World!')</b></li>
+            <li><b>Subtraction, Multiplication, Division (-,*,/):</b> Performs expected mathematical function (2-1; 2*4; 4/2;</li>
+            <li><b>Assignment (=):</b>Assigns a value to a variable (let myVariable = 'x';)</li>
+            <li><b>Strict Equality (===):</b>Performs a test to see if two values are equal, returns a boolean result (let myVariable = 'x'; myVariable === 'y';)</li>
+            <li><b>Not, Does Not Equal (!,!==):</b>Returns the logically opposite value of what it precedes, turns a 'true' into a 'false'</li>
+          </ul><!--Operators Sublist-->
+          <li><b>Conditionals: </b>Code structures used to test if an expression returns true or not. The most common example is an if/then statement
+          <li><b>Functions:</b> Ways of packaging functionality you wish to reuse so as to avoid repeating the same code. Functions can be recalled in code when necessary like (myFunction())</li>
           <li>Messages can be sent in a browsers console/DevTools with the method console.log which can be used to help developers in the debugging process</li>
           <li>JavaScript Files should be linked to HTML files at the end of the Body section with a Link tag, similar to how a CSS file is linked</li>
-          <li></li>
+          <li><b>For Loop:</b> Uses a predictable pattern of indices to perform a task on all items in an array by executing a single block of code repeatedly. 
+            This loop must be interrupted with another statement such as an if statement to execute a block of code a specific number of times. <b>Contains 3 Important Expressions:</b></li><ul>
+              <li><b>Initialization:</b> Expression/Variable Declaration evaluated once before loop begins. Newly declared variables with 'var' are not local to the loop, decalred variables using 'let' are local to the loop</li>
+              <li><b>Condition:</b> Expression to be evaluated before each loop iteration. If (expression === true){statement is executed}; else{execution exits loop and goes to first statement after 'for' loop}</li>
+              <li><b>Afterthought:</b> Expression to be evaluated at the end of each loop interation; occurs before next evaluation of <b>'condition'</b>, generally used to update/increment the counter variable (x + 1 is a common expression here which can be more simply written as x++)</li>
+              <li><b>Statement: </b>Code that is executed as long as the condition evaluates as true</li>
+              <li>All 3 Expressions in the for loop are not required but included as a standard</li>
+            </ul> <!--For Loop Sublist-->
+          <li>Blocks of code can be "commented out" like this: <b>/* CODE BLOCK */</b></li>
         </ul>
       </section>
     </main>
