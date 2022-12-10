@@ -73,17 +73,20 @@
             </ul>
             <li>Multiple Selectors can be combined in a single CSS Rule separated by commas, declarations will apply to all elements selected </li>
             <li>Using an asterisk * as a selector will apply declarations to every element visible on the webpage</li>
-            <li>Refer to CSS BOX MODEL for example of how the Margin/Border/Padding/Content in an element are organized</li>
             
             <img src="./assets/css-box-model.png" alt="CSS Box Model" style="width:60%; height: 40%; border: 5px solid grey; margin:20px auto;">
+            <li>Refer to CSS BOX MODEL for example of how the Margin/Border/Padding/Content in an element are organized</li>
             <ul>
               <li>This image was modified using inline CSS code</li>
               <li>A margin indicates how much space we want around the outside of an element.</li>
               <li>A padding indicates how much space we want around the content inside an element.</li>
             </ul>
+
+            <li>When defining the value of a color, you can refer to either the name of a color ("grey") or by its hexadecimal code/Hex # (#000000), the hex code will give a more precise hue</li>
       
             <li>If using an external stylesheet, you must link the sheet to the webpage in the head section of your HTML code</li>
             <li>You can create a class selector by starting it with a period. This will allow you to apply the class' CSS declarations to any HTML element assigned to it</li>
+              <ul><li>Using this study guide as an example, the CSS class "card" linked to the HTML file from the stylesheet is applied to each <b>&lt;section&gt; tag</b>, so all the elements within those sections are affected by the "card" class.</li></ul>
             <li>The example code "margin: 40px auto;" assigns 2 values to the property</li><ul>
               <li>The first value (40px) will be assigned to the top and bottom of the element</li>
               <li>The second value (auto) will be assigned to the left and right of the element</li>
@@ -116,6 +119,13 @@
             <li>Pull Request (PR):</li>
           </ul><!--Push/Pull/PR sublist-->
           <li>git pull origin main: Pulls remote "main" branch into the local "main" branch, syncing both online and local repositories</li>
+          <li><b>Save local changes to Remote Repository:</b></li><ol style="margin-left: 30px;">
+            <li><b>git status</b> double check current branch</li>
+            <li><b>git add -A</b> takes modified files in working directory and places it in the <b>staging area</b></li>
+            <li><b>git commit -m</b> Commits staged changes to remote repository with descriptive message</li>
+            <li><b>git pull origin main</b> Ensures local branch is up to date before pushing changes</li>
+            <li><b>git push origin [branch-name]</b> Pushes commited changes in current branch to remote repo</li>
+          </ol><!--Save Local Changes Process-->
         </ul>
       </section>
       
@@ -126,13 +136,41 @@
           <li>JavaScript os a high-level dynamic programming language that allows users to interact with websites</li>
           <li>As in CSS, /* defines a comment</li>
           <li>A <b>Variable</b> is a named container that allows us to store data in our code and can be defined as "const", "let", or more commonly "var"</li>
-          <li><b>Control Flow</b> is the order in which a computer executes a code in script. This goes top to bottom.</li>
-          <li>An <b>Array</b> is a single variable that is used to hold a group of data where the values are contained by [brackets] and separated by commas</li><ul>
-            <li>In order to access an individual value in an array, you must reference its <b>Array Index</b>
-               represented by sequenced numbers starting with "0" that indicates each items place in the order of the array [0,1,2,3,4...]</li>
-            <li></li>
-          </ul><!--Array Sublist-->
-
+          <li><b>Control Flow</b> is the order in which a computer executes a code in script. This goes top to bottom.</li>          
+          <li>Variables can be given values that have different <b>Data Types</b></li><ul>
+            <li><b>Strings:</b> A sequence of text declared as (x = 'String')
+            <li><b>Numbers:</b> A numerical value, needs no quotes (x = 4)</li>
+            <li><b>Boolean:</b> A true/false value, needs no quotes (x = true)</li>
+            <li><b>Array:</b> A structure that allows you to store multple values in a single reference, contained by brackets and separated by commas (x = [red, green, blue])</li><ul>
+              <li>Refer to each member of an array by calling their <b>Array Index</b> represented by sequenced numbers starting with "0" that indicates each items place in the order of the array [0,1,2,3...]</li>
+                <uL><li>In the above example, the color green would be represented by x[1] because it is the second value in the array</li></uL>
+              <li>Arrays can hold values of different data types. For example, a students name, age, and enrollement status are contained in one Array, represented as (var studentInfo = ['John', 24, true])</li>
+            </ul><!--Array Sublist--></li>
+            <li><b>Object:</b> "This can be anything. Everything in JavaScript is an object and can be stored in a variable. Keep this in mind as you learn." (x = document.querySelector('h1'))</li>
+          </ul><!--Data Types Sublist-->
+          <li><b>Operators</b> are mathematical symbols that produce a result based on two values</li><ul>
+            <li><b>Addition (+): Adds 2 Numbers or Strings Together (1 + 2; 'Hello' + 'World!')</b></li>
+            <li><b>Subtraction, Multiplication, Division (-,*,/):</b> Performs expected mathematical function (2-1; 2*4; 4/2;</li>
+            <li><b>Assignment (=):</b>Assigns a value to a variable (let myVariable = 'x';)</li>
+            <li><b>Strict Equality (===):</b>Performs a test to see if two values are equal, returns a boolean result (let myVariable = 'x'; myVariable === 'y';)</li>
+            <li><b>Not, Does Not Equal (!,!==):</b>Returns the logically opposite value of what it precedes, turns a 'true' into a 'false'</li>
+          </ul><!--Operators Sublist-->
+          <li><b>Conditionals: </b>Code structures used to test if an expression returns true or not. The most common example is an if/then statement
+          <li><b>Functions:</b> Ways of packaging functionality you wish to reuse so as to avoid repeating the same code. Functions can be recalled in code when necessary like "myFunction()"</li>
+            <ul><li>Functions will not run unless they are called somewhere in the script.</li></ul>
+          <li>Messages can be sent in a browsers console/DevTools with the method console.log which can be used to help developers in the debugging process</li>
+          <li>JavaScript Files should be linked to HTML files at the end of the Body section with a Link tag, similar to how a CSS file is linked</li>
+          <li><b>For Loop:</b> Uses a predictable pattern of indices to perform a task on all items in an array by executing a single block of code repeatedly. 
+            This loop must be interrupted with another statement such as an if statement to execute a block of code a specific number of times. <b>Contains 3 Important Expressions:</b></li><ul>
+              <li><b>Initialization:</b> Expression/Variable Declaration evaluated once before loop begins. Newly declared variables with 'var' are not local to the loop, decalred variables using 'let' are local to the loop</li>
+              <li><b>Condition:</b> Expression to be evaluated before each loop iteration. If (expression === true){statement is executed}; else{execution exits loop and goes to first statement after 'for' loop}</li>
+              <li><b>Afterthought:</b> Expression to be evaluated at the end of each loop interation; occurs before next evaluation of <b>'condition'</b>, generally used to update/increment the counter variable (x + 1 is a common expression here which can be more simply written as x++)</li>
+              <li><b>Statement: </b>Code that is executed as long as the condition evaluates as true</li>
+              <li>All 3 Expressions in the for loop are not required but included as a standard</li>
+            </ul> <!--For Loop Sublist-->
+          <li>Blocks of code can be "commented out" like this: <b>/* CODE BLOCK */</b></li>
+          <li>"Math" is a JavaScript Object that has properties/methods used for mathematical constants and functions.</li>
+            <ul><li>For example, "Math.random()" generates a random number from 0 to &lt;1</li></ul>
         </ul>
       </section>
     </main>
