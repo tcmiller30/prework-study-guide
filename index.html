@@ -73,17 +73,20 @@
             </ul>
             <li>Multiple Selectors can be combined in a single CSS Rule separated by commas, declarations will apply to all elements selected </li>
             <li>Using an asterisk * as a selector will apply declarations to every element visible on the webpage</li>
-            <li>Refer to CSS BOX MODEL for example of how the Margin/Border/Padding/Content in an element are organized</li>
             
             <img src="./assets/css-box-model.png" alt="CSS Box Model" style="width:60%; height: 40%; border: 5px solid grey; margin:20px auto;">
+            <li>Refer to CSS BOX MODEL for example of how the Margin/Border/Padding/Content in an element are organized</li>
             <ul>
               <li>This image was modified using inline CSS code</li>
               <li>A margin indicates how much space we want around the outside of an element.</li>
               <li>A padding indicates how much space we want around the content inside an element.</li>
             </ul>
+
+            <li>When defining the value of a color, you can refer to either the name of a color ("grey") or by its hexadecimal code/Hex # (#000000), the hex code will give a more precise hue</li>
       
             <li>If using an external stylesheet, you must link the sheet to the webpage in the head section of your HTML code</li>
             <li>You can create a class selector by starting it with a period. This will allow you to apply the class' CSS declarations to any HTML element assigned to it</li>
+              <ul><li>Using this study guide as an example, the CSS class "card" linked to the HTML file from the stylesheet is applied to each <b>&lt;section&gt; tag</b>, so all the elements within those sections are affected by the "card" class.</li></ul>
             <li>The example code "margin: 40px auto;" assigns 2 values to the property</li><ul>
               <li>The first value (40px) will be assigned to the top and bottom of the element</li>
               <li>The second value (auto) will be assigned to the left and right of the element</li>
@@ -153,7 +156,8 @@
             <li><b>Not, Does Not Equal (!,!==):</b>Returns the logically opposite value of what it precedes, turns a 'true' into a 'false'</li>
           </ul><!--Operators Sublist-->
           <li><b>Conditionals: </b>Code structures used to test if an expression returns true or not. The most common example is an if/then statement
-          <li><b>Functions:</b> Ways of packaging functionality you wish to reuse so as to avoid repeating the same code. Functions can be recalled in code when necessary like (myFunction())</li>
+          <li><b>Functions:</b> Ways of packaging functionality you wish to reuse so as to avoid repeating the same code. Functions can be recalled in code when necessary like "myFunction()"</li>
+            <ul><li>Functions will not run unless they are called somewhere in the script.</li></ul>
           <li>Messages can be sent in a browsers console/DevTools with the method console.log which can be used to help developers in the debugging process</li>
           <li>JavaScript Files should be linked to HTML files at the end of the Body section with a Link tag, similar to how a CSS file is linked</li>
           <li><b>For Loop:</b> Uses a predictable pattern of indices to perform a task on all items in an array by executing a single block of code repeatedly. 
@@ -165,6 +169,8 @@
               <li>All 3 Expressions in the for loop are not required but included as a standard</li>
             </ul> <!--For Loop Sublist-->
           <li>Blocks of code can be "commented out" like this: <b>/* CODE BLOCK */</b></li>
+          <li>"Math" is a JavaScript Object that has properties/methods used for mathematical constants and functions.</li>
+            <ul><li>For example, "Math.random()" generates a random number from 0 to &lt;1</li></ul>
         </ul>
       </section>
     </main>
